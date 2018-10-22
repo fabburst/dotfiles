@@ -1,0 +1,14 @@
+function ll
+    ls -l $argv
+end
+
+function l
+    ls -l $argv
+end
+function l
+    ll
+end
+
+function xm
+    xmodmap -e $argv 
+end

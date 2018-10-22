@@ -1,0 +1,254 @@
+# Doc : http://i3wm.org/docs/userguide.html
+
+###############################
+#      CONFIGURATION I3       #
+###############################
+
+set $mod Mod4
+set $alt Mod1
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+#font pango:monospace 9
+font pango:System San Francisco Text Medium 10
+
+# thin borders
+hide_edge_borders both
+
+# Back and forth between workspace
+workspace_auto_back_and_forth yes
+
+# Define borders
+
+for_window [class="Lxappearance"] border pixel 10
+
+###############################
+#         KEYBINDING          #
+###############################
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start controle volume
+bindsym $mod+v exec pavucontrol
+
+# start a terminal
+bindsym $mod+Return exec konsole
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec rofi -show drun
+#bindsym $mod+d exec ulauncher
+
+# Changement du Focus
+bindsym $mod+j focus left
+bindsym $mod+l focus right
+bindsym $mod+k focus down
+bindsym $mod+i focus up
+
+# move focused window
+bindsym $alt+j move left
+bindsym $alt+l move right
+bindsym $alt+k move down
+bindsym $alt+i move up
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+Shift+h split h
+
+# split in vertical orientation
+bindsym $mod+Shift+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+#Fullscreen a window in a container
+bindsym $mod+Shift+f focus parent; fullscreen; focus child
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# Loading my keyboard mods <*
+bindsym $mod+$alt+b exec /home/fab/.config/i3/clavier.sh
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+z focus child
+
+#set $ws1 1:Principal
+#set $ws2 "2:Code - 2 -"
+#set $ws3 "3:Nav - 3 -"
+#set $ws4 "4:Terminal - 4 -"
+#set $ws5 "5:Son - 5 -"
+#set $ws6 "6:Mots de passe - 6 -"
+#set $ws7 "7:Sept - 7 -"
+#set $ws8 "8:Huit - 8 -"
+#set $ws9 "9:Neuf - 9 -"
+#set $ws10 "10:Attente"
+# switch to workspace
+bindsym $mod+ampersand workspace number 1 irc
+bindsym $mod+eacute workspace number 2 www
+bindsym $mod+quotedbl workspace number 3 code
+bindsym $mod+apostrophe workspace number 4 code
+bindsym $mod+parenleft workspace number 5 code
+bindsym $mod+minus workspace number 6 code
+bindsym $mod+egrave workspace number 7 code
+bindsym $mod+underscore workspace number 8 code
+bindsym $mod+ccedilla workspace number 9 mail
+bindsym $mod+agrave workspace number 10 mon
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1 irc
+bindsym $mod+Shift+2 move container to workspace number 2 www
+bindsym $mod+Shift+3 move container to workspace number 3 code
+bindsym $mod+Shift+4 move container to workspace number 4 code
+bindsym $mod+Shift+5 move container to workspace number 5 code
+bindsym $mod+Shift+6 move container to workspace number 6 code
+bindsym $mod+Shift+7 move container to workspace number 7 code
+bindsym $mod+Shift+8 move container to workspace number 8 code
+bindsym $mod+Shift+9 move container to workspace number 9 mail
+bindsym $mod+Shift+0 move container to workspace number 10 mon
+
+#assign [class="Firefox|Google-chrome-beta|Google-chrome"] 3 : Navigateur
+#assign [class="Code"] 4 : VScode
+#for_windows [class="mynoise.net"] move to workspace 7
+#assign [class="www.deezer.com__login"] 5 : Sons
+assign [class="myNoise"] 5 : Son
+assign [class="mynoise.net"] 5 : Son
+assign [class="Mynoise"] 5 : Son
+assign [class="MellowPlayer"] 5 : Son
+assign [class="qutebrowser"] 5 : Son
+assign [class="Bitwarden"] 6 : Bitwarden
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+y exec "i3-nagbar -t warning -m ' Tu veux quitter i3?  Cela terminera ta session X.' -b 'Oui, quitte i3' 'i3-msg exit'"
+
+# lock
+bindsym $mod+Shift+x exec i3lock --color 475263
+
+# Ouvrir l'exploreur de fichier
+bindsym $mod+Shift+p exec nautilus -q
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym l resize shrink height 10 px or 10 ppt
+        bindsym ntilde resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# class                 border  bground text    indicator child_border
+client.focused          #2F343F #2F343F #F3F4F5 #00FF00   #285577
+client.focused_inactive #333844 #2F343F #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #6D1129 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
+
+# floating windows
+for_window [class="Pavucontrol"] floating enable
+for_window [class="Kalu"] floating enable
+
+
+# Multimedia Keys
+
+ bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer set Master 2%+ && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
+ bindsym XF86AudioLowerVolume exec --no-startup-id "amixer set Master 2%- && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
+ bindsym XF86AudioMute exec --no-startup-id "amixer set Master toggle && if amixer get Master | grep -Fq '[off]'; then volnoti-show -m; else volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1); fi"
+# volume
+#bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
+#bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
+
+# granular volume control
+#bindsym $mod+XF86AudioRaiseVolume exec amixer -D pulse sset Master 1%+ && pkill -RTMIN+1 i3blocks
+#bindsym $mod+XF86AudioLowerVolume exec amixer -D pulse sset Master 1%- && pkill -RTMIN+1 i3blocks
+
+# mute
+#bindsym XF86AudioMute exec amixer sset Master toggle && killall -USR1 i3blocks
+
+#bindsym XF86AudioPlay exec playerctl play
+#bindsym XF86AudioPause exec playerctl pause
+#bindsym XF86AudioNext exec playerctl next
+#bindsym XF86AudioPrev exec playerctl previous
+
+bindsym XF86AudioPlay exec mocp --toggle-pause
+bindsym XF86AudioPause exec mocp --toggle-pause
+bindsym XF86AudioStop exec mocp --togle-pause
+bindsym XF86AudioNext exec mocp --next
+bindsym XF86AudioPrev exec mocp --previous
+
+bindsym $mod+F5 exec mocp --toggle-pause
+bindsym $mod+F6 exec mocp --stop
+bindsym $mod+F7 exec mocp --previous
+bindsym $mod+F8 exec mocp --next
+
+# App shortcuts
+bindsym $mod+w exec "/usr/bin/firefox"
+bindsym $mod+n exec "/usr/bin/pcmanfm"
+
+# Redirect sound to headphones
+#bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
+
+# Autostart apps
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#exec --no-startup-id "compton -cC"
+exec --no-startup-id qutebrowser
+exec --no-startup-id compton -b -c -f
+exec --no-startup-id nm-applet
+exec --no-startup-id "nitrogen --restore"
+exec --no-startup-id "sleep 5s && kalu"
+exec --no-startup-id /usr/bin/ulauncher
+exec --no-startup-id /usr/bin/volnoti-show
+exec --no-startup-id clipit
+#exec --no-startup-id dunst
+exec --no-startup-id /home/fab/.config/i3/clavier.sh
+exec --no-startup-id /home/fab/.config/i3/pcloud.sh
+exec_always --no-startup-id "killall polybar; polybar -r default"
+
+gaps inner 5
+smart_gaps on
+smart_borders on
+
+#exec notify-send -a i3 "loaded" "Welcome to i3."
