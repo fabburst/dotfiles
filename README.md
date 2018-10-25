@@ -1,11 +1,11 @@
-
+<div>
 <p align="center"><br><br> <img src="https://github.com/fabburst/dotfiles/blob/master/Fab's%20dotfiles.png"width="160px"> </p>
 
 <h1 align="center"> Dotfiles </h1> <div align="center"> <a 
 
 <p align="center"> <br> 
     </p>
-
+<div/>
 ## Installation
 
 ```
