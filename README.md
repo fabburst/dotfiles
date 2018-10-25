@@ -22,14 +22,12 @@ Script for remapping included in I3
 - [bluez-utils](https://#) : Development and debugging utilities for the bluetooth protocol stac
 - [bitwarden-bin](https://aur.archlinux.org/packages/bitwarden-bin/) : Password manager
 - [caprine](https://github.com/sindresorhus/caprine) : Facebook Messenger app
-- [composer](https://#) : Description to come
-- [feh](https://#) : Description to come
-- [firefox](https://#) : Description to come
-- [fish](https://#) : Description to come
-- [i3-gaps](https://#) : Description to come
-- [kalu](https://#) : Description to come
-- [leafpad](https://#) : Description to come
-- [Konsole](https://#) : Description to come
+- [feh](https://github.com/derf/feh) : image viewer
+- [fish](https://github.com/fish-shell/fish-shell) : user-friendly command line shell 
+- [i3-gaps](https://github.com/Airblader/i3) : Fork of i3wm, a tiling window manager for Linux
+- [kalu](https://github.com/jjk-jacky/kalu) : "Keeping Arch Linux Up-to-date") is a small application that will add an icon to your systray and sit there, regularly checking if there's anything new for you to upgrade
+- [mousepad](https://github.com/codebrainz/mousepad) : simple text editor
+- [Konsole](https://github.com/KDE/konsole) : terminal emulator
 - [lightdm-settings](https://#) : Description to come
 - [lightdm-slick-greeter](https://#) : Description to come
 - [lxappearance](https://#) : Description to come
@@ -60,6 +58,7 @@ Script for remapping included in I3
 - [mariadb](https://#) : Description to come
 - [php](https://#) : Description to come
 - [phpmyadmin](https://#) : Description to come
+- [composer](https://github.com/composer/composer) : Declare, manage, and install dependencies of PHP projects.
 
 ## Theming
 
