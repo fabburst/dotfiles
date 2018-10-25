@@ -16,12 +16,12 @@ Script for remapping included in I3
 
 ## Apps to install
 
-- [arandr](https://#) : Description to come
-- [blueman](https://#) : Description to come
-- [bluez](https://#) : Description to come
-- [bluez-utils](https://#) : Description to come
-- [bitwarden-bin](https://#) : Description to come
-- [caprine](https://#) : Description to come
+- [arandr](https://aur.archlinux.org/packages/arandr-git/) : visual front end for XRandR
+- [blueman](https://aur.archlinux.org/packages/blueman-git/) : Bluetooth Manager
+- [bluez](https://aur.archlinux.org/packages/bluez-git/) : Libraries and tools for the Bluetooth protocol stack.
+- [bluez-utils](https://#) : Development and debugging utilities for the bluetooth protocol stac
+- [bitwarden-bin](https://aur.archlinux.org/packages/bitwarden-bin/) : Password manager
+- [caprine](https://github.com/sindresorhus/caprine) : Facebook Messenger app
 - [composer](https://#) : Description to come
 - [feh](https://#) : Description to come
 - [firefox](https://#) : Description to come
