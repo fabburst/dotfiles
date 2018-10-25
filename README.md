@@ -16,25 +16,25 @@ Script for remapping included in I3
 
 ## Apps to install
 
-- [arandr](https://aur.archlinux.org/packages/arandr-git/) : visual front end for XRandR
+- [arandr](https://aur.archlinux.org/packages/arandr-git/) : Visual front end for XRandR
 - [blueman](https://aur.archlinux.org/packages/blueman-git/) : Bluetooth Manager
 - [bluez](https://aur.archlinux.org/packages/bluez-git/) : Libraries and tools for the Bluetooth protocol stack.
 - [bluez-utils](https://#) : Development and debugging utilities for the bluetooth protocol stac
 - [bitwarden-bin](https://aur.archlinux.org/packages/bitwarden-bin/) : Password manager
 - [caprine](https://github.com/sindresorhus/caprine) : Facebook Messenger app
-- [feh](https://github.com/derf/feh) : image viewer
-- [fish](https://github.com/fish-shell/fish-shell) : user-friendly command line shell 
+- [feh](https://github.com/derf/feh) : Image viewer
+- [fish](https://github.com/fish-shell/fish-shell) : User-friendly command line shell 
 - [i3-gaps](https://github.com/Airblader/i3) : Fork of i3wm, a tiling window manager for Linux
-- [kalu](https://github.com/jjk-jacky/kalu) : "Keeping Arch Linux Up-to-date") is a small application that will add an icon to your systray and sit there, regularly checking if there's anything new for you to upgrade
-- [mousepad](https://github.com/codebrainz/mousepad) : simple text editor
-- [Konsole](https://github.com/KDE/konsole) : terminal emulator
+- [kalu](https://github.com/jjk-jacky/kalu) : "Keeping Arch Linux Up-to-date" app checking for updates
+- [mousepad](https://github.com/codebrainz/mousepad) : Simple text editor
+- [Konsole](https://github.com/KDE/konsole) : Terminal emulator
 - [lightdm-settings](https://#) : Description to come
 - [lightdm-slick-greeter](https://#) : Description to come
 - [lxappearance](https://#) : Description to come
 - [mellowplayer](https://#) : Description to come
 - [neofetch](https://#) : Description to come
 - [openpyn-nordvpn](https://#) : Description to come
-- [pcloudcc](https://#) : Description to come
+- [pcloudcc](https://github.com/pcloudcom/console-client/tree/master/pCloudCC) : Console client for pCloudCC
 - [polybar](https://#) : Description to come
 - [protonmail-desktop](https://#) : Description to come
 - [pulseaudio-bluetooth](https://#) : Description to come
