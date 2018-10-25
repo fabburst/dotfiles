@@ -1,19 +1,26 @@
-# Dotfiles
+
+<p align="center"><br><br> <img src="https://github.com/fabburst/dotfiles/blob/master/Fab's%20dotfiles.png"width="160px"> </p>
+
+<h1 align="center"> Dotfiles </h1> <div align="center"> <a 
+
+<p align="center"> <br> 
+    </p>
 
 ## Installation
+
 ```
 export DOTFILES_PATH=~/.dotfiles/public
 git clone https://raw.githubusercontent.com/fabburst/dotfiles/master/install.XXXzsh && chmod u+x install.XXXzsh && ./install.XXXzsh && rm install.XXXzsh
 ```
+<!-- -->
 # System Configuration [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
 
-I try to keep my configuration in this repo. I symlink
-my [dotfiles])into the appropriate locations with stow for reference and to keep new machines upto date
-
+I try to keep my configuration in this repo. I symlink my [dotfiles] with stow for reference to keep new machines up to date
+<!-- -->
 ## Remapping caps lock
 
 Script for remapping included in I3
-
+<!-- -->
 ## Apps to install
 
 - [arandr](https://aur.archlinux.org/packages/arandr-git/) : Visual front end for XRandR
@@ -51,7 +58,7 @@ Script for remapping included in I3
 - [volumeicon](https://#) : Description to come
 - [wallsplash](https://#) : Description to come
 - [yacreader](https://#) : Description to come
-
+<!-- -->
 ## Dev Apps to install
 
 - [visual-studio-code-bin](https://#) : Description to come
@@ -59,7 +66,7 @@ Script for remapping included in I3
 - [php](https://#) : Description to come
 - [phpmyadmin](https://#) : Description to come
 - [composer](https://github.com/composer/composer) : Declare, manage, and install dependencies of PHP projects.
-
+<!-- -->
 ## Theming
 
 - [Adwaita-dark-gtk2](https://github.com/axxapy/Adwaita-dark-gtk2) : Description to come
@@ -74,11 +81,12 @@ Script for remapping included in I3
     go to the desired theme folder: $ cd /usr/share/themes
     clone theme's repo: $ git clone <URI> Macos-sierra-CT
 ```
+<!-- -->
 ## Manual install
 
-- [Joplin](https://joplin.cozic.net/) : Description to come
-- [Webcatalog](https://getwebcatalog.com/) : Description to come
-
+- [ ] [Joplin](https://joplin.cozic.net/) : Description to come
+- [ ] [Webcatalog](https://getwebcatalog.com/) : Description to come
+<!-- -->
 ## Sources of inspiration
 - [Github does dotfiles](http://dotfiles.github.io/)
 - [Grafikart](https://github.com/grafikart/dotfiles)
