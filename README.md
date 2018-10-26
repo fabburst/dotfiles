@@ -24,7 +24,16 @@ I try to keep my configuration in this repo. I symlink my [dotfiles] with stow f
 ## Remapping keycaps
 
 Script for remapping Anne2 keybord to french layout
+```
+#!/bin/bash
+echo "Changing keys..."
 
+xmodmap -e 'keycode 51 = less greater bar brokenbar bar brokenbar'
+xmodmap -e 'keycode 35 = dollar sterling bracketright braceright asterisk'
+
+echo "The keys have been changed !"
+echo
+```
 <!-- -->
 ## Apps to install
 
