@@ -10,10 +10,10 @@ These are my dotfiles but feel free to study, reuse or grab anything that works 
 <!-- -->
 # [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]Dotfiles
 
-I try to keep my configuration in this repo. I symlink my [dotfiles] with stow for reference to keep new machines up to date
-File or directory name that starts with a period or full stop character is considered hidden, and in a default view will not be displayed. thus the name dotfiles. 
+I keep my configuration in this repo symlink my [dotfiles] with stow for reference to keep new machines up to date.
+Dotfiles are file or directory with a name that starts with a period or full stop character.
 I needed a simple tool to manage them : Stow.
-Stow allows me to keep a versioned directory of all my config files. they are  that are linked into place via a single command. 
+It allows me to keep a versioned directory of all my config files that are linked into place via a single command. 
 
 <!-- -->
 ## Installation
