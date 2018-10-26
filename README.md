@@ -7,7 +7,20 @@
 ## If you're not me  
 These are my dotfiles but feel free to study, reuse or grab anything that works for you. 
 
+<!-- -->
+# [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]Dotfiles
+
+I try to keep my configuration in this repo. I symlink my [dotfiles] with stow for reference to keep new machines up to date
+File or directory name that starts with a period or full stop character is considered hidden, and in a default view will not be displayed. thus the name dotfiles. 
+I needed a simple tool to manage them : Stow.
+Stow allows me to keep a versioned directory of all my config files. they are  that are linked into place via a single command. 
+
+<!-- -->
 ## Installation
+Stow can be installed with this commands :
+- `sudo pacman -S stow`
+- `sudo apt-get install stow`
+- `brew install stow`
 
 ```
 [GNU Stow] is used to automatically create symlinks from my user's `$HOME/.dotfile` directory that point my various dotfiles.
@@ -15,12 +28,36 @@ Usage
 git clone https://github.com/fabburst/dotfiles.git
 stow -S 
 ```
-
 <!-- -->
-# System Configuration [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
+## Usage
 
-I try to keep my configuration in this repo. I symlink my [dotfiles] with stow for reference to keep new machines up to date
+Stow create symlinks for files in the parent directory of where you execute the command. My dotfiles are all stored in my home directory `~/.dotfiles`. and all stow commands should be executed in that directory. otherwise `-d` flag with location is neeeded.
+**note:** stow can only create a symlink if a config file does not already exist. if a default file was created upon program installation you must delete it first before you can install a new one with stow. this does not apply to directories, only files.
+
+Navigate to your home directory
+
+`cd ~`
+
+clone the repo:
+
+`git clone http://git.xero.nu/dotfiles.git`
+
+enter the dotfiles directory
+
+`cd dotfiles`
+
+install the fish settings
+
+`stow fish`
+
+install fish settings for the root user
+
+`sudo stow fish -t /root`
 <!-- -->
+## Myshell
+i use [fish](http://#) as my interactive shell beacause of awesome completion and greats functions bringing great flexibility on day to day usage.
+My functions are :
+
 ## Remapping keyboard keys
 
 Script for remapping Anne2 keyboard keys to french layout
@@ -36,7 +73,7 @@ echo
 ```
 <!-- -->
 ## Apps to install
-
+tha happy few
 - [arandr](https://aur.archlinux.org/packages/arandr-git/) : Visual front end for XRandR
 - [blueman](https://aur.archlinux.org/packages/blueman-git/) : Bluetooth Manager
 - [bluez](https://aur.archlinux.org/packages/bluez-git/) : Libraries and tools for the Bluetooth protocol stack.
