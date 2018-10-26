@@ -21,9 +21,9 @@ stow -S
 
 I try to keep my configuration in this repo. I symlink my [dotfiles] with stow for reference to keep new machines up to date
 <!-- -->
-## Remapping keyboard keycaps
+## Remapping keyboard keys
 
-Script for remapping Anne2 keyboard keycaps to french layout
+Script for remapping Anne2 keyboard keys to french layout
 ```
 #!/bin/bash
 echo "Changing keys..."
