@@ -1,23 +1,21 @@
 bitwarden
 blueman-git
-i3-gaps-next-git
-konsole
-pcloudcc
-poly bar
-pulseman
-raindrop
-rofi
-ulauncher
-visual studio code
 fish
 google-chrome
+i3-gaps-next-git
+konsole
 konsole
 lxappearance
 openpyn-nordvpn
 pavucontrol
+pcloudcc
 pcmanfm
+poly bar
 pulseaudio-alsa
+pulseman
+raindrop
 redshift
+rofi
 rsync
 screenfetch
 speed test
@@ -28,7 +26,9 @@ transmission-gtk
 ttf-dejavu
 ttf-freefont
 ttf-google-fonts
+ulauncher
 vim
+visual studio code
 visual-studio-code
 vlc
 webcatalog
