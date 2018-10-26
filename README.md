@@ -40,7 +40,7 @@ Navigate to your home directory
 
 clone the repo:
 
-`git clone http://git.xero.nu/dotfiles.git`
+`git clone https://github.com/fabburst/dotfiles.git`
 
 enter the dotfiles directory
 
