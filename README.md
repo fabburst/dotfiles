@@ -34,6 +34,7 @@ Script for remapping Anne2 keybord to french layout
 - [bluez-utils](https://#) : Development and debugging utilities for the bluetooth protocol stac
 - [bitwarden-bin](https://aur.archlinux.org/packages/bitwarden-bin/) : Password manager
 - [caprine](https://github.com/sindresorhus/caprine) : Facebook Messenger app
+- [conky](https://github.com/brndnmtthws/conky) : Light-weight system monitor for X
 - [feh](https://github.com/derf/feh) : Image viewer
 - [fish](https://github.com/fish-shell/fish-shell) : User-friendly command line shell 
 - [i3-gaps](https://github.com/Airblader/i3) : Fork of i3wm, a tiling window manager for Linux
