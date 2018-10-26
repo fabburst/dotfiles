@@ -55,9 +55,42 @@ install fish settings for the root user
 `sudo stow fish -t /root`
 <!-- -->
 ## Myshell
-i use [fish](http://#) as my interactive shell beacause of awesome completion and greats functions bringing great flexibility on day to day usage.
-My functions are :
 
+I changed my shell with the this command:
+
+	chsh -s /usr/local/bin/fish
+
+To switch to default shell back, just run `chsh -s /bin/bash`
+I switched to fish because it comes with autocompletion from my shell history, contextual autocompletion a great syntax highlighting and nice funtions.
+Functons can easyly created like this :
+
+```fish
+function mkdirp
+    mkdir -p $argv
+end
+```
+Mine are :
+- bak
+Add a ".bak" to a file
+- downloads
+Got to my downloads folder
+- sites
+Got to my sites folder
+- gc
+Git clone
+- ip
+myip
+- ll
+ls -la 
+- miaj
+sudo pacman -Syu
+- mkc
+mkdir & cd
+- rmv
+sudo pacman -R $argv
+-speedip
+speed-test; myip public
+<!-- -->
 ## Remapping keyboard keys
 
 Script for remapping Anne2 keyboard keys to french layout
