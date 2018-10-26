@@ -52,23 +52,23 @@ Script for remapping included in I3
 - [ripgrep](https://github.com/BurntSushi/ripgrep) : Recursively searches directories for a regex pattern
 - [rofi](https://github.com/DaveDavenport/rofi) : Application launcher and dmenu replacement
 - [speed-test](https://github.com/sindresorhus/speed-test) : Test internet connection speed and ping using speedtest.net from the CLI
-- [stow](https://#) : Description to come
-- [thunar](https://#) : Description to come
-- [ttf-font-awesome](https://#) : Description to come
-- [ulauncher](https://#) : Description to come
-- [unrarall-git](https://#) : Description to come
-- [vlc](https://#) : Description to come
-- [volnoti-brightness-git](https://#) : Description to come
-- [volumeicon](https://#) : Description to come
-- [wallsplash](https://#) : Description to come
-- [yacreader](https://#) : Description to come
+- [stow](https://www.gnu.org/software/stow/manual/stow.html) : Managing the installation of multiple software packages in the same run-time directory treeon to come
+- [thunar](https://github.com/xfce-mirror/thunar) : File manager
+- [ttf-font-awesome](https://github.com/FortAwesome/Font-Awesome) : Icon toolkit
+- [ulauncher](https://github.com/Ulauncher/Ulauncher) : Application Launcher
+- [unrarall-git](https://github.com/arfoll/unrarall) : Bash script to unrar everything and cleanup in a given directory
+- [vlc](https://github.com/videolan/vlc) : Media player
+- [volnoti-brightness-git](https://github.com/jukil/volnoti-brightness) : Lightweight brightness notification
+- [volumeicon](https://github.com/Maato/volumeicon) : Volume control in systray
+- [wallsplash](https://github.com/filalex77/wallsplash/) : Set Unsplash images as wallpapers
+- [yacreader](https://github.com/YACReader/yacreader) : Comics reader
 <!-- -->
 ## Dev Apps to install
 
-- [visual-studio-code-bin](https://#) : Description to come
-- [mariadb](https://#) : Description to come
-- [php](https://#) : Description to come
-- [phpmyadmin](https://#) : Description to come
+- [visual-studio-code-bin](https://aur.archlinux.org/packages/visual-studio-code-bin) : Code editor
+- [mariadb](https://github.com/MariaDB) : Open source replacement for MySQL
+- [php](https://github.com/php) : Scripting language for web development
+- [phpmyadmin](https://github.com/phpmyadmin) : MySQL management tool
 - [composer](https://github.com/composer/composer) : Declare, manage, and install dependencies of PHP projects.
 <!-- -->
 ## Theming
@@ -94,3 +94,4 @@ Script for remapping included in I3
 ## Sources of inspiration
 - [Github does dotfiles](http://dotfiles.github.io/)
 - [Grafikart](https://github.com/grafikart/dotfiles)
+- [Benoth](https://github.com/Benoth/dotfiles)
