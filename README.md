@@ -23,7 +23,8 @@ I try to keep my configuration in this repo. I symlink my [dotfiles] with stow f
 <!-- -->
 ## Remapping keycaps
 
-Script for remapping included in I3
+Script for remapping Anne2 keybord to french layout
+
 <!-- -->
 ## Apps to install
 
