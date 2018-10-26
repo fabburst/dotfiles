@@ -1,0 +1,38 @@
+bitwarden
+blueman-git
+i3-gaps-next-git
+konsole
+pcloudcc
+poly bar
+pulseman
+raindrop
+rofi
+ulauncher
+visual studio code
+fish
+google-chrome
+konsole
+lxappearance
+openpyn-nordvpn
+pavucontrol
+pcmanfm
+pulseaudio-alsa
+redshift
+rsync
+screenfetch
+speed test
+stow
+system-san-francisco-font-git
+thunar
+transmission-gtk
+ttf-dejavu
+ttf-freefont
+ttf-google-fonts
+vim
+visual-studio-code
+vlc
+webcatalog
+wget
+xarchiver
+xcursor-osx-elcap
+yay
