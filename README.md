@@ -54,7 +54,7 @@ install fish settings for the root user
 
 `sudo stow fish -t /root`
 <!-- -->
-## Myshell
+## Dotfiles for [fish](http://fish.sh) :fish:
 
 I changed my shell with the this command:
 
