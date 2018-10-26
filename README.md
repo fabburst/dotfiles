@@ -5,7 +5,7 @@
 
 <!-- -->
 ## If you're not me  
-These are my dotfiles. Feel free to browse and grab anything that works for you. 
+These are my dotfiles but feel free to study, reuse or grab anything that works for you. 
 
 ## Installation
 
