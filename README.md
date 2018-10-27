@@ -10,29 +10,24 @@ These are my dotfiles but feel free to study, reuse or grab anything that works 
 <!-- -->
 # [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]Dotfiles
 
-I keep my configuration in this repo symlink my [dotfiles] with stow for reference to keep new machines up to date.
 Dotfiles are file or directory with a name that starts with a period or full stop character.
-I needed a simple tool to manage them : Stow.
-It allows me to keep a versioned directory of all my config files that are linked into place via a single command. 
+I keep my configuration in this repo and symlink my [dotfiles] with stow for reference.
+
+It allows me to keep a versioned directory of all my config files. 
 
 <!-- -->
 ## Installation
 Stow can be installed with this commands :
-- `sudo pacman -S stow`
-- `sudo apt-get install stow`
-- `brew install stow`
-
 ```
-[GNU Stow] is used to automatically create symlinks from my user's `$HOME/.dotfile` directory that point my various dotfiles.
-Usage 
-git clone https://github.com/fabburst/dotfiles.git
-stow -S 
+- `sudo pacman -S stow`
+
 ```
 <!-- -->
 ## Usage
 
-Stow create symlinks for files in the parent directory of where you execute the command. My dotfiles are all stored in my home directory `~/.dotfiles`. and all stow commands should be executed in that directory. otherwise `-d` flag with location is neeeded.
-**note:** stow can only create a symlink if a config file does not already exist. if a default file was created upon program installation you must delete it first before you can install a new one with stow. this does not apply to directories, only files.
+Stow create symlinks for files in the parent directory of where you execute the command. My dotfiles are all stored in my home directory `~/.dotfiles`. and all stow commands should be executed in that directory. otherwise `-d` flag with location is needed.
+**note:** stow can only create a symlink if a config file does not already exist. 
+=> if a default file was created upon program installation delete it first before installind a new one with stow. this does not apply to directories, only files.
 
 Navigate to your home directory
 
@@ -106,7 +101,7 @@ echo
 ```
 <!-- -->
 ## Apps to install
-tha happy few
+The happy few
 - [arandr](https://aur.archlinux.org/packages/arandr-git/) : Visual front end for XRandR
 - [blueman](https://aur.archlinux.org/packages/blueman-git/) : Bluetooth Manager
 - [bluez](https://aur.archlinux.org/packages/bluez-git/) : Libraries and tools for the Bluetooth protocol stack.
@@ -150,22 +145,18 @@ tha happy few
 - [mariadb](https://github.com/MariaDB) : Open source replacement for MySQL
 - [php](https://github.com/php) : Scripting language for web development
 - [phpmyadmin](https://github.com/phpmyadmin) : MySQL management tool
-- [composer](https://github.com/composer/composer) : Declare, manage, and install dependencies of PHP projects.
+- [composer](https://github.com/composer/composer) : Dependency Manager for PHP
 <!-- -->
 ## Theming
-
+```
+    Install the theme in either /usr/share/themes, or in your home directory, in ~/.local/share/themes and ~/.themes
+    go to the desired theme folder: $ cd /usr/share/themes
+    clone theme's repo: $ git clone <URI> ****theme_name****
+```
 - [Adwaita-dark-gtk2](https://github.com/axxapy/Adwaita-dark-gtk2) : Description to come
-```
-    Install the theme in either /usr/share/themes, or in your home directory, in ~/.local/share/themes and ~/.themes
-    go to the desired theme folder: $ cd /usr/share/themes
-    clone theme's repo: $ git clone <URI> Adwaita-dark
-```
+
 - [Macos-sierra-CT](https://github.com/zayronxio/Macos-sierra-CT2) : Description to come
-```
-    Install the theme in either /usr/share/themes, or in your home directory, in ~/.local/share/themes and ~/.themes
-    go to the desired theme folder: $ cd /usr/share/themes
-    clone theme's repo: $ git clone <URI> Macos-sierra-CT
-```
+
 <!-- -->
 ## Manual install
 
