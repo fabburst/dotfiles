@@ -20,7 +20,6 @@ It allows me to keep a versioned directory of all my config files.
 Stow can be installed with this commands :
 ```
 - `sudo pacman -S stow`
-
 ```
 <!-- -->
 ## Usage
@@ -51,44 +50,34 @@ install fish settings for the root user
 <!-- -->
 ## Dotfiles for [fish](http://fish.sh) :fish:
 
-I changed my shell with the this command:
+Change the shell with this command:
 
 	chsh -s /usr/local/bin/fish
 
 To switch to default shell back, just run `chsh -s /bin/bash`
-I switched to fish because it comes with autocompletion from my shell history, contextual autocompletion a great syntax highlighting and nice funtions.
-Functons can easyly created like this :
+Fish comes with autocompletion from my shell history, contextual autocompletion a great syntax highlighting and nice funtions.
+Functions can easyly be created like this :
 
 ```fish
 function mkdirp
     mkdir -p $argv
 end
 ```
-Mine are :
-- bak
-Add a ".bak" to a file
-- downloads
-Got to my downloads folder
-- sites
-Got to my sites folder
-- gc
-Git clone
-- ip
-myip
-- ll
-ls -la 
-- miaj
-sudo pacman -Syu
-- mkc
-mkdir & cd
-- rmv
-sudo pacman -R $argv
--speedip
-speed-test; myip public
+:pencil2: Mine are :
+- bak => Add a ".bak" to a file
+- downloads => Go to my downloads folder
+- sites => Go to my sites folder
+- gc => Git clone
+- ip => run myip
+- ll => ls -la 
+- miaj => sudo pacman -Syu
+- mkc => mkdir & cd
+- rmv => sudo pacman -R $argv
+- speedip => speed-test; myip public
 <!-- -->
 ## Remapping keyboard keys
 
-Script for remapping Anne2 keyboard keys to french layout
+Script for remapping [Anne Pro 2 keyboard](http://en.obins.net/anne-pro2)keys to french layout
 ```
 #!/bin/bash
 echo "Changing keys..."
