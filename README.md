@@ -156,3 +156,6 @@ The happy few
 - [Github does dotfiles](http://dotfiles.github.io/)
 - [Grafikart](https://github.com/grafikart/dotfiles)
 - [Benoth](https://github.com/Benoth/dotfiles)
+- [jorgebucaran](https://github.com/jorgebucaran/fish-shell-cookbook)
+- [laughedelic](https://github.com/laughedelic/fish)
+- [MoritzKn](https://github.com/MoritzKn/fish-functions)
