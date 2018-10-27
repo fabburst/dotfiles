@@ -63,7 +63,7 @@ function mkdirp
     mkdir -p $argv
 end
 ```
-:pencil2: Mine are :
+:pencil2: Mines are :
 - bak => Add a ".bak" to a file
 - downloads => Go to my downloads folder
 - sites => Go to my sites folder
@@ -107,7 +107,7 @@ The happy few
 - [lightdm-settings](https://github.com/linuxmint/lightdm-settings) : Configuration tool for the LightDM display manager
 - [lightdm-slick-greeter](https://github.com/linuxmint/slick-greeter) : Slick-looking LightDM greeter
 - [lxappearance](https://www.archlinux.org/packages/community/x86_64/lxappearance-gtk3/) : lxappearance-gtk3 is GTK+ theme switcher of the LXDE Desktop (GTK+ 3 version)
-- [mellowplayer](https://github.com/ColinDuquesnoy/MellowPlayer/releases) : Desktop application that runs web-based music streaming services in its own window and provides integration with your desktop
+- [mellowplayer](https://github.com/ColinDuquesnoy/MellowPlayer/releases) : Runs web-based music streaming services in its own window
 - [neofetch](https://github.com/dylanaraps/neofetch) : Command-line system information tool
 - [openpyn-nordvpn](https://github.com/jotyGill/openpyn-nordvpn) : Easily connect to OpenVPN servers hosted by NordVPN on Linux
 - [pcloudcc](https://github.com/pcloudcom/console-client/tree/master/pCloudCC) : Console client for pCloud
