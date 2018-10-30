@@ -98,6 +98,7 @@ The happy few
 - [conky](https://github.com/brndnmtthws/conky) : Light-weight system monitor for X
 - [feh](https://github.com/derf/feh) : Image viewer
 - [fish](https://github.com/fish-shell/fish-shell) : User-friendly command line shell 
+- [gdmap](http://gdmap.sourceforge.net/) : Visualize disk space
 - [i3-gaps](https://github.com/Airblader/i3) : Fork of i3wm, a tiling window manager for Linux
 - [kalu](https://github.com/jjk-jacky/kalu) : "Keeping Arch Linux Up-to-date" app checking for updates
 - [mousepad](https://github.com/codebrainz/mousepad) : Simple text editor
