@@ -8,10 +8,10 @@
 These are my dotfiles but feel free to study, reuse or grab anything that works for you. 
 
 <!-- -->
-# [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]Dotfiles
+# Dotfiles
 
 Dotfiles are file or directory with a name that starts with a period or full stop character.
-I keep my configuration in this repo and symlink my [dotfiles] with stow for reference.
+I keep my configuration in this repo and symlink my dotfiles with stow for reference.
 
 It allows me to keep a versioned directory of all my config files. 
 
