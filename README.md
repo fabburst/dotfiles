@@ -10,8 +10,7 @@ These are my dotfiles but feel free to study, reuse or grab anything that works 
 <!-- -->
 # Dotfiles
 
-[Dotfiles] (https://wiki.archlinux.org/index.php/Dotfiles) are files or directories with a name that starts with a period or full stop character.
-I keep my configuration in this repo and symlink my dotfiles with stow for reference.
+I keep my configuration in this repo and symlink my [Dotfiles](https://wiki.archlinux.org/index.php/Dotfiles) with stow for reference.
 It allows me to keep a versioned directory of all my config files. 
 
 <!-- -->
