@@ -242,7 +242,7 @@ exec --no-startup-id "sleep 5s && kalu"
 exec --no-startup-id /usr/bin/ulauncher
 exec --no-startup-id /usr/bin/volnoti-show
 exec --no-startup-id clipit
-#exec --no-startup-id dunst
+exec --no-startup-id twmn
 exec --no-startup-id /home/fab/.config/i3/clavier.sh
 exec --no-startup-id /home/fab/.config/i3/pcloud.sh
 exec_always --no-startup-id "killall polybar; polybar -r default"
