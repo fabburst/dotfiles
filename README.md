@@ -119,6 +119,7 @@ The happy few
 - [stow](https://www.gnu.org/software/stow/manual/stow.html) : Managing the installation of multiple software packages in the same run-time directory treeon to come
 - [thunar](https://github.com/xfce-mirror/thunar) : File manager
 - [ttf-font-awesome](https://github.com/FortAwesome/Font-Awesome) : Icon toolkit
+- [twmn](https://github.com/sboli/twmn) : Notification system for tiling window managers
 - [ulauncher](https://github.com/Ulauncher/Ulauncher) : Application Launcher
 - [unrarall-git](https://github.com/arfoll/unrarall) : Bash script to unrar everything and cleanup in a given directory
 - [vlc](https://github.com/videolan/vlc) : Media player
