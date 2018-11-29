@@ -92,8 +92,8 @@ The happy few
 - [arandr](https://aur.archlinux.org/packages/arandr-git/) : Visual front end for XRandR
 - [archur](https://github.com/Foxboron/Archur) : Generate Arch Wallpaper
 
-```archur -o Arch4k.jpg -t 'solarized' -r 3840x2160 --text 'fabcode'
-feh --bg-scale ~/Pictures/Arch4k.jpg 
+```
+archur -o Arch4k.jpg -t 'solarized' -r 3840x2160 --text 'fabcode'
 ``````
 - [blueman](https://aur.archlinux.org/packages/blueman-git/) : Bluetooth Manager
 - [bluez](https://aur.archlinux.org/packages/bluez-git/) : Libraries and tools for the Bluetooth protocol stack.
@@ -102,6 +102,10 @@ feh --bg-scale ~/Pictures/Arch4k.jpg
 - [caprine](https://github.com/sindresorhus/caprine) : Facebook Messenger app
 - [conky](https://github.com/brndnmtthws/conky) : Light-weight system monitor for X
 - [feh](https://github.com/derf/feh) : Image viewer
+
+```
+feh --bg-scale ~/Pictures/Arch4k.jpg 
+``````
 - [fish](https://github.com/fish-shell/fish-shell) : User-friendly command line shell 
 - [gdmap](http://gdmap.sourceforge.net/) : Visualize disk space
 - [i3-gaps](https://github.com/Airblader/i3) : Fork of i3wm, a tiling window manager for Linux
