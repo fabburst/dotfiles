@@ -91,8 +91,10 @@ echo
 The happy few
 - [arandr](https://aur.archlinux.org/packages/arandr-git/) : Visual front end for XRandR
 - [archur](https://github.com/Foxboron/Archur) : Generate Arch Wallpaper
+
 ```archur -o Arch4k.jpg -t 'solarized' -r 3840x2160 --text 'fabcode'
-```
+feh --bg-scale ~/Pictures/Arch4k.jpg 
+``````
 - [blueman](https://aur.archlinux.org/packages/blueman-git/) : Bluetooth Manager
 - [bluez](https://aur.archlinux.org/packages/bluez-git/) : Libraries and tools for the Bluetooth protocol stack.
 - [bluez-utils](https://#) : Development and debugging utilities for the bluetooth protocol stac
