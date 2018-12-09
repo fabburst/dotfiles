@@ -126,7 +126,7 @@ feh --bg-scale ~/Pictures/Arch4k.jpg
 - [rofi](https://github.com/DaveDavenport/rofi) : Application launcher and dmenu replacement
 - [speed-test](https://github.com/sindresorhus/speed-test) : Test internet connection speed and ping using speedtest.net from the CLI
 - [stow](https://www.gnu.org/software/stow/manual/stow.html) : Managing the installation of multiple software packages in the same run-time directory treeon to come
-- [thunar](https://github.com/xfce-mirror/thunar) : File manager
+- [nemo](https://github.com/linuxmint/nemo) : File manager
 - [ttf-font-awesome](https://github.com/FortAwesome/Font-Awesome) : Icon toolkit
 - [twmn](https://github.com/sboli/twmn) : Notification system for tiling window managers
 - [ulauncher](https://github.com/Ulauncher/Ulauncher) : Application Launcher
@@ -150,15 +150,16 @@ feh --bg-scale ~/Pictures/Arch4k.jpg
     Install the theme in either /usr/share/themes, or in your home directory, in ~/.local/share/themes and ~/.themes
     go to the desired theme folder: $ cd /usr/share/themes
     clone theme's repo: $ git clone <URI> ****theme_name****
-```
-- [Adwaita-dark-gtk2](https://github.com/axxapy/Adwaita-dark-gtk2) : Description to come
+    sudo tar -zcvf Macos-sierra-CT..tar.gz Macos-sierra-CT for icons
 
-- [Macos-sierra-CT](https://github.com/zayronxio/Macos-sierra-CT2) : Description to come
+```
+- [Adwaita-dark-gtk2](https://github.com/axxapy/Adwaita-dark-gtk2) : Dark Theme
+
+- [Macos-sierra-CT](https://github.com/zayronxio/Macos-sierra-CT) : Macos-sierra icons
 
 <!-- -->
 ## Manual install
 
-- [ ] [Joplin](https://joplin.cozic.net/) : Description to come
 - [ ] [Webcatalog](https://getwebcatalog.com/) : Description to come
 <!-- -->
 ## Sources of inspiration
