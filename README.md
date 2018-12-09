@@ -160,7 +160,7 @@ feh --bg-scale ~/Pictures/Arch4k.jpg
 <!-- -->
 ## Manual install
 
-- [ ] [Webcatalog](https://getwebcatalog.com/) : Description to come
+- [ ] [Webcatalog](https://github.com/quanglam2807/webcatalog-12) : Description to come
 <!-- -->
 ## Sources of inspiration
 - [Github does dotfiles](http://dotfiles.github.io/)
