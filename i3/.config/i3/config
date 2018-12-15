@@ -241,10 +241,12 @@ exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 5s && kalu"
 exec --no-startup-id /usr/bin/ulauncher
 exec --no-startup-id /usr/bin/volnoti-show
-exec --no-startup-id clipit
+exec --no-startup-id glipper &
 exec --no-startup-id twmn
-exec --no-startup-id /home/fab/.config/i3/clavier.sh
-exec --no-startup-id /home/fab/.config/i3/pcloud.sh
+exec --no-startup-id /home/fab/.dotfiles/i3/.config/i3/clavier.sh
+exec --no-startup-id /home/fab/.dotfiles/i3/.config/i3/pcloud.sh
+exec --no-startup-id /home/fab/.dotfiles/i3/.config/i3/qutebrowser.sh 
+exec --no-startup-id xinput set-prop 'SYNA7DB5:01 06CB:CD41 Touchpad' 'libinput Tapping Enabled' 1
 exec_always --no-startup-id "killall polybar; polybar -r default"
 
 gaps inner 5
