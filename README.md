@@ -88,7 +88,7 @@ echo
 ```
 ## Mouting pcloud drive
 
-Script for mounting pcloud drive [Pcloucc](https://github.com/pcloudcom/console-client/tree/master/pCloudCC)
+Script for mounting [Pcloucc](https://github.com/pcloudcom/console-client/tree/master/pCloudCC) drive 
 ```
 #!/bin/fish
 pcloudcc -u email@gmail.com -p -s -n -d
@@ -98,11 +98,30 @@ password
 
 ## Discrete qutebrower at startup
 
-Script for qutebrowser [Qutebrowser](https://aur.archlinux.org/packages/qutebrowser-git/) prevent drawing attention
+Script for [Qutebrowser](https://aur.archlinux.org/packages/qutebrowser-git/) prevent drawing attention
 ```
 #!/bin/fish
 sleep 10
 exec wmctrl -r "qutebrowser" -b remove,demands_attention
+```
+<!-- -->
+
+## No password needed for bluetooth
+
+You have to create a new rule "51-blueman.rules" in /etc/polkit-1/rules.d/
+```
+/* Allow users in wheel group to use blueman feature requiring root without authentication */
+polkit.addRule(function(action, subject) {
+    if ((action.id == "org.blueman.network.setup" ||
+         action.id == "org.blueman.dhcp.client" ||
+         action.id == "org.blueman.rfkill.setstate" ||
+         action.id == "org.blueman.pppd.pppconnect") &&
+        subject.isInGroup("wheel")) {
+
+        return polkit.Result.YES;
+    }
+});
+
 ```
 <!-- -->
 ## Apps to install
