@@ -86,6 +86,24 @@ xmodmap -e 'keycode 35 = dollar sterling bracketright braceright asterisk'
 echo "The keys have been changed !"
 echo
 ```
+## Mouting pcloud drive
+
+Script for mounting pcloud drive [Pcloucc](https://github.com/pcloudcom/console-client/tree/master/pCloudCC)
+```
+#!/bin/fish
+pcloudcc -u email@gmail.com -p -s -n -d
+password
+```
+<!-- -->
+
+## Discrete qutebrower at startup
+
+Script for qutebrowser [Qutebrowser](https://aur.archlinux.org/packages/qutebrowser-git/) prevent drawing attention
+```
+#!/bin/fish
+sleep 10
+exec wmctrl -r "qutebrowser" -b remove,demands_attention
+```
 <!-- -->
 ## Apps to install
 The happy few
@@ -108,6 +126,7 @@ feh --bg-scale ~/Pictures/Arch4k.jpg
 ``````
 - [fish](https://github.com/fish-shell/fish-shell) : User-friendly command line shell 
 - [gdmap](http://gdmap.sourceforge.net/) : Visualize disk space
+- [gtk3-mushrooms](https://github.com/TomaszGasior/gtk3-mushrooms) : Fix Systray icons
 - [i3-gaps](https://github.com/Airblader/i3) : Fork of i3wm, a tiling window manager for Linux
 - [kalu](https://github.com/jjk-jacky/kalu) : "Keeping Arch Linux Up-to-date" app checking for updates
 - [mousepad](https://github.com/codebrainz/mousepad) : Simple text editor
@@ -122,6 +141,7 @@ feh --bg-scale ~/Pictures/Arch4k.jpg
 - [polybar](https://github.com/jaagr/polybar) : Fast and easy-to-use status bar
 - [protonmail-desktop](https://github.com/protonmail-desktop/application) : Unofficial Electron wrapper for ProtonMail
 - [pulseaudio-bluetooth](https://www.archlinux.org/packages/extra/x86_64/pulseaudio-bluetooth/) : Bluetooth support for PulseAudio
+- [qutebrowser](https://aur.archlinux.org/packages/qutebrowser-git/) : Browser
 - [ripgrep](https://github.com/BurntSushi/ripgrep) : Recursively searches directories for a regex pattern
 - [rofi](https://github.com/DaveDavenport/rofi) : Application launcher and dmenu replacement
 - [speed-test](https://github.com/sindresorhus/speed-test) : Test internet connection speed and ping using speedtest.net from the CLI
@@ -132,10 +152,12 @@ feh --bg-scale ~/Pictures/Arch4k.jpg
 - [ulauncher](https://github.com/Ulauncher/Ulauncher) : Application Launcher
 - [unrarall-git](https://github.com/arfoll/unrarall) : Bash script to unrar everything and cleanup in a given directory
 - [vlc](https://github.com/videolan/vlc) : Media player
+- [variety](https://www.archlinux.org/packages/community/any/variety/) : Changes the wallpaper on a regular interval 
 - [volnoti-brightness-git](https://github.com/jukil/volnoti-brightness) : Lightweight brightness notification
 - [volumeicon](https://github.com/Maato/volumeicon) : Volume control in systray
-- [wallsplash](https://github.com/filalex77/wallsplash/) : Set Unsplash images as wallpapers
+- [wmctrl](https://www.archlinux.org/packages/community/x86_64/wmctrl/) : Control your EWMH compliant window manager cli
 - [yacreader](https://github.com/YACReader/yacreader) : Comics reader
+
 <!-- -->
 ## Dev Apps to install
 
