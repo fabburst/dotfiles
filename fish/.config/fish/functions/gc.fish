@@ -1,3 +1,3 @@
 function gc
-	git clone $argv
+	git clone
 end

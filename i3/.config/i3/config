@@ -80,9 +80,6 @@ bindsym $mod+Shift+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# Loading my keyboard mods <*
-bindsym $mod+$alt+b exec /home/fab/.config/i3/clavier.sh
-
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -92,50 +89,53 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+z focus child
 
-#set $ws1 1:Principal
-#set $ws2 "2:Code - 2 -"
-#set $ws3 "3:Nav - 3 -"
-#set $ws4 "4:Terminal - 4 -"
-#set $ws5 "5:Son - 5 -"
-#set $ws6 "6:Mots de passe - 6 -"
-#set $ws7 "7:Sept - 7 -"
-#set $ws8 "8:Huit - 8 -"
-#set $ws9 "9:Neuf - 9 -"
-#set $ws10 "10:Attente"
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
 # switch to workspace
-bindsym $mod+ampersand workspace number 1 irc
-bindsym $mod+eacute workspace number 2 www
-bindsym $mod+quotedbl workspace number 3 code
-bindsym $mod+apostrophe workspace number 4 code
-bindsym $mod+parenleft workspace number 5 code
-bindsym $mod+minus workspace number 6 code
-bindsym $mod+egrave workspace number 7 code
-bindsym $mod+underscore workspace number 8 code
-bindsym $mod+ccedilla workspace number 9 mail
-bindsym $mod+agrave workspace number 10 mon
+bindsym $mod+ampersand workspace number 1
+bindsym $mod+eacute workspace number 2
+bindsym $mod+quotedbl workspace number 3
+bindsym $mod+apostrophe workspace number 4
+bindsym $mod+parenleft workspace number 5
+bindsym $mod+minus workspace number 6
+bindsym $mod+egrave workspace number 7
+bindsym $mod+underscore workspace number 8
+bindsym $mod+ccedilla workspace number 9
+bindsym $mod+agrave workspace number 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number 1 irc
-bindsym $mod+Shift+2 move container to workspace number 2 www
-bindsym $mod+Shift+3 move container to workspace number 3 code
-bindsym $mod+Shift+4 move container to workspace number 4 code
-bindsym $mod+Shift+5 move container to workspace number 5 code
-bindsym $mod+Shift+6 move container to workspace number 6 code
-bindsym $mod+Shift+7 move container to workspace number 7 code
-bindsym $mod+Shift+8 move container to workspace number 8 code
-bindsym $mod+Shift+9 move container to workspace number 9 mail
-bindsym $mod+Shift+0 move container to workspace number 10 mon
+bindsym $mod+Shift+1 move container to workspace number 1 
+bindsym $mod+Shift+2 move container to workspace number 2 
+bindsym $mod+Shift+3 move container to workspace number 3 
+bindsym $mod+Shift+4 move container to workspace number 4 
+bindsym $mod+Shift+5 move container to workspace number 5 
+bindsym $mod+Shift+6 move container to workspace number 6 
+bindsym $mod+Shift+7 move container to workspace number 7 
+bindsym $mod+Shift+8 move container to workspace number 8 
+bindsym $mod+Shift+9 move container to workspace number 9 
+bindsym $mod+Shift+0 move container to workspace number 10 
 
 #assign [class="Firefox|Google-chrome-beta|Google-chrome"] 3 : Navigateur
 #assign [class="Code"] 4 : VScode
 #for_windows [class="mynoise.net"] move to workspace 7
 #assign [class="www.deezer.com__login"] 5 : Sons
-assign [class="myNoise"] 5 : Son
-assign [class="mynoise.net"] 5 : Son
-assign [class="Mynoise"] 5 : Son
-assign [class="MellowPlayer"] 5 : Son
-assign [class="qutebrowser"] 5 : Son
-assign [class="Bitwarden"] 6 : Bitwarden
+assign [class="myNoise"] 5
+assign [class="mynoise.net"] 5
+assign [class="Mynoise"] 5
+assign [class="MellowPlayer"] 5
+assign [class="qutebrowser"] 5
+assign [class="Bitwarden"] 6
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -149,8 +149,12 @@ bindsym $mod+Shift+y exec "i3-nagbar -t warning -m ' Tu veux quitter i3?  Cela t
 # lock
 bindsym $mod+Shift+x exec i3lock --color 475263
 
+# toggle touch-to-click
+
+bindsym $mod+Shift+t exec xinput set-prop 'SYNA7DB5:01 06CB:CD41 Touchpad' 'libinput Tapping Enabled' 1
+
 # Ouvrir l'exploreur de fichier
-bindsym $mod+Shift+p exec nautilus -q
+bindsym $mod+Shift+p exec nemo
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -197,6 +201,10 @@ for_window [class="Kalu"] floating enable
  bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer set Master 2%+ && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
  bindsym XF86AudioLowerVolume exec --no-startup-id "amixer set Master 2%- && volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1)"
  bindsym XF86AudioMute exec --no-startup-id "amixer set Master toggle && if amixer get Master | grep -Fq '[off]'; then volnoti-show -m; else volnoti-show $(amixer get Master | grep -Po '[0-9]+(?=%)' | head -1); fi"
+
+#brightness 
+exec --no-startup-id xfce4-power-manager &
+
 # volume
 #bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
 #bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
@@ -224,9 +232,14 @@ bindsym $mod+F6 exec mocp --stop
 bindsym $mod+F7 exec mocp --previous
 bindsym $mod+F8 exec mocp --next
 
+#brightness keybindings
+#todo
+
 # App shortcuts
 bindsym $mod+w exec "/usr/bin/firefox"
-bindsym $mod+n exec "/usr/bin/pcmanfm"
+bindsym $mod+x exec "/usr/bin/google-chrome-stable"
+bindsym $mod+n exec "/usr/bin/nemo"
+exec --nostartup-id feh --bg-scale ~/Images/Arch1920.jpg
 
 # Redirect sound to headphones
 #bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
@@ -234,19 +247,23 @@ bindsym $mod+n exec "/usr/bin/pcmanfm"
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id "compton -cC"
-exec --no-startup-id qutebrowser
+#xec --no-startup-id cbatticon &
+exec --no-startup-id /usr/bin/blueman-applet
+exec --no-startup-id "sh -c 'sleep 10; exec qutebrowser'"
+#exec --no-startup-id qutebrowser
 exec --no-startup-id compton -b -c -f
 exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
-exec --no-startup-id "sleep 5s && kalu"
-exec --no-startup-id /usr/bin/ulauncher
-exec --no-startup-id /usr/bin/volnoti-show
+#exec --no-startup-id "sleep 5s && kalu"
+exec --no-startup-id glipper &
+exec --no-startup-id /usr/bin/ulauncher &
+exec --no-startup-id volnoti &
 exec --no-startup-id clipit
 exec --no-startup-id twmn
-exec --no-startup-id /home/fab/.config/i3/clavier.sh
-exec --no-startup-id /home/fab/.config/i3/pcloud.sh
+exec --no-startup-id /home/fab/.dotfiles/i3/.config/i3/pcloud.sh
+exec --no-startup-id /home/fab/.dotfiles/i3/.config/i3/qutebrowser.sh
 exec_always --no-startup-id "killall polybar; polybar -r default"
-
+exec --no-startup-id xinput set-prop 'SYNA7DB5:01 06CB:CD41 Touchpad' 'libinput Tapping Enabled' 0
 gaps inner 5
 smart_gaps on
 smart_borders on
